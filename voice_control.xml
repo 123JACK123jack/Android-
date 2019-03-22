@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:orientation="vertical" 
+    android:background="@drawable/background6">
+
+    <include layout="@layout/microwill_actionbar" />
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="声音  ："
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp"/>
+            <RadioGroup 
+                android:id="@+id/rg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="8dp">
+                <RadioButton 
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有声音"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+                <RadioButton 
+                    android:id="@+id/rb2"
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无声音"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="50dp"
+            android:text="确定" />"
+    </TableLayout>
+ 
+    </LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:orientation="vertical"
+    android:background="@drawable/background2">
+
+    <include layout="@layout/microwill_actionbar" />
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/kongtiaostate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/jiashistate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:text="温度情况："
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="冷"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="暖"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <RelativeLayout>
+
+            </RelativeLayout>
+        </TableRow>
+<RelativeLayout>
+    <Button
+        android:id="@+id/open1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+
+        android:text="降低温度" />
+
+    <Button
+        android:id="@+id/close1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_toLeftOf="@id/open1"
+        android:text="升高温度" />
+    <Button
+        android:id="@+id/open2"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/open1"
+        android:layout_centerVertical="true"
+        android:text="降低湿度" />
+
+
+
+</RelativeLayout>
+
+        <Button
+            android:id="@+id/close2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="77dp"
+            android:layout_marginRight="77dp"
+            android:layout_marginBottom="2dp"
+            android:text="增加湿度" />
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="180dp"
+            android:text="自动控制" />
+
+
+
+
+
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/deng" />
+</LinearLayout>
